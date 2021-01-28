@@ -1,3 +1,13 @@
+# 参考
+
+[原来 8 张图，就可以搞懂「零拷贝」了](https://zhuanlan.zhihu.com/p/258513662)
+
+[Java NIO浅析](https://zhuanlan.zhihu.com/p/23488863)
+
+[网络传输中的buffer以及DMA传输](https://blog.csdn.net/KingOfMyHeart/article/details/98091940?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~sobaiduend~default-1-98091940.nonecase&utm_term=%E7%BD%91%E5%8D%A1%E6%8E%A5%E6%94%B6%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%86%85%E5%AD%98%E6%8B%B7%E8%B4%9D&spm=1000.2123.3001.4430)
+
+
+
 # NIO和epoll
 
 下面的内容将详细介绍网络编程的演变，涉及的知识点包括：
@@ -285,4 +295,43 @@ public class SelectServer {
 
 有一点必须要记住：不管是select还是epoll，返回给程序的都是可读可写的socket**状态**，必须由程序员自己手动的读写这些socket（内核空间和用户空间的copy），**因此说select和epoll都是同步操作**。（如果程序自己读取IO，那么这个IO模型，无论BIO，NIO，多路复用，都是同步模型。但windows系统中，IOCP内核有线程会拷贝到程序的内存空间的）。
 
+## 读取硬盘数据
 
+在介绍NIO之前，我们了解一下程序是如何读取硬盘数据的
+
+![image-20200917153241456](https://tva1.sinaimg.cn/large/007S8ZIlly1gitonav35gj30ge0a6glz.jpg)
+
+应用程序读取硬盘的操作如下：
+
+1. 程序向CPU发起指令读取文件
+
+2. CPU委托DMA去完成IO的操作，自己去执行另外的任务
+
+3. 4负责读取数据到内核空间
+
+4. 数据读完之后DMA向CPU触发中断
+
+5. 内核读取将数据从内核空间copy到用户空间
+
+6. 应用程序读取到数据
+
+## 文件描述符
+
+文件描述符是一个整数，用来标记一个可以操作的资源。例如打来一个文本文件
+
+```java
+FileInputStream fis = new FileInputStream("abc.txt");
+FileDescriptor fd = fis.getFD();
+
+public final class FileDescriptor {
+
+    private int fd;  //文件描述符
+
+    private Closeable parent;
+    private List<Closeable> otherParents;
+    private boolean closed;
+  	...
+}
+```
+
+## NIO和IO的区别

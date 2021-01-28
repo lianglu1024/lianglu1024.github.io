@@ -1,51 +1,14 @@
-# NIO
+# NIO介绍
 
-在介绍NIO之前，我们了解一下程序是如何读取硬盘数据的
+NIO可以理解成NoBlocking IO，也可以理解为New IO，是java02年引入的包，存放在`package java.nio`。
 
-![image-20200917153241456](https://tva1.sinaimg.cn/large/007S8ZIlly1gitonav35gj30ge0a6glz.jpg)
+NIO有三个最重要的概念，Channel，Buffer和Selector，**为什么引入了这三个概念，就可以比传统的BIO效率高呢**？我们要带着这样的思考往下看。
 
-应用程序读取硬盘的操作如下：
+`Channel`：表示操作 I/O （如读取或写入）的连接。类似于Stream，只不过Stream是单向的，channel是双向的，可读可写。负责buffer进行传输数据。
 
-1. 程序向CPU发起指令读取文件
+`Buffer`：是一个用于存储特定基本类型数据的容器。除了boolean外，其余每种基本类型都有一个对应的buffer类。Buffer类的子类有ByteBuffer，CharBuffer， DoubleBuffer， FloatBuffer,，IntBuffer,，LongBuffer，ShortBuffer。
 
-2. CPU委托DMA去完成IO的操作，自己去执行另外的任务
-
-3. 4负责读取数据到内核空间
-
-7. 数据读完之后DMA向CPU触发中断
-
-5. 内核读取将数据从内核空间copy到用户空间
-
-6. 应用程序读取到数据
-
-## 文件描述符
-
-文件描述符是一个整数，用来标记一个可以操作的资源。例如打来一个文本文件
-
-```java
-FileInputStream fis = new FileInputStream("abc.txt");
-FileDescriptor fd = fis.getFD();
-
-public final class FileDescriptor {
-
-    private int fd;  //文件描述符
-
-    private Closeable parent;
-    private List<Closeable> otherParents;
-    private boolean closed;
-  	...
-}
-```
-
-## NIO和IO的区别
-
-NIO有三个概念：
-
-Channel：表示操作 I/O （如读取或写入）的连接。类似于Stream，只不过Stream是单向的，channel是双向的，可读可写。负责buffer进行传输数据。
-
-Buffer：是一个用于存储特定基本类型数据的容器。除了boolean外，其余每种基本类型都有一个对应的buffer类。Buffer类的子类有ByteBuffer, CharBuffer, DoubleBuffer, FloatBuffer, IntBuffer, LongBuffer, ShortBuffer 
-
-Selector：Selector（选择器）用于监听多个通道的事件（比如：连接打开，数据到达）
+`Selector`：Selector（选择器）用于监听多个通道的事件（比如：连接打开，数据到达）。
 
 Buffer有四个重要参数：
 
