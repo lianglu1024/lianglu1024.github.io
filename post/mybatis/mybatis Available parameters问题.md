@@ -8,9 +8,9 @@ Caused by: org.apache.ibatis.binding.BindingException: Parameter 'countryId' not
 
 原因是Mapper接口里的方法参数名前没有加`@Param`注解。可是我以前没加也是可以的呀？
 
-##获取方法参数名
+## 获取方法参数名
 
-在java8里，我们想获取方法的参数名，可最终得到的是`arg0`
+在java8里，按下面的方式获取方法的参数名，最终得到的是`arg0`
 
 ```java
 public class Demo01 {
@@ -26,7 +26,7 @@ public class Demo01 {
 }
 ```
 
-如果想获取test方法的id参数名，需要编译源码的时候加上`- parameters`
+如果想获取test方法的参数名id，需要编译源码的时候加上`- parameters`
 
 ```
 javac - parameters Demo01
