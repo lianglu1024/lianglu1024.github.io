@@ -1,6 +1,6 @@
 # NIO介绍
 
-NIO可以理解成NoBlocking IO，也可以理解为New IO，是java02年引入的包，存放在`package java.nio`。
+NIO可以理解成NonBlocking IO，也可以理解为New IO，是java02年引入的包，存放在`package java.nio`。
 
 NIO有三个最重要的概念，Channel，Buffer和Selector，**为什么引入了这三个概念，就可以比传统的BIO效率高呢**？我们要带着这样的思考往下看。
 
@@ -89,6 +89,14 @@ public class Test02 {
 
 
 https://blog.csdn.net/weixin_43815050/article/details/95218893
+
+
+
+![image-20210128205714937](https://tva1.sinaimg.cn/large/008eGmZEly1gn3pg549ofj30zm0n27je.jpg)
+
+
+
+![image-20210128205932325](https://tva1.sinaimg.cn/large/008eGmZEly1gn3picdfl8j30ti0gswlx.jpg)
 
 
 
