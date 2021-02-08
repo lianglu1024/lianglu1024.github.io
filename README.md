@@ -1,5 +1,9 @@
 # lianglu1024.github.io
 
+## Java
+
+* [UTF-8和Unicode](post/java/UTF-8和Unicode.md)
+
 ## 设计模式
 
 * [模板设计模式](post/design_pattern/9.模板设计模式.md)
