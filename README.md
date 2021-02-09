@@ -9,6 +9,7 @@
 * [模板设计模式](post/design_pattern/9.模板设计模式.md)
 * [代理模式](post/design_pattern/5.代理模式.md)
 * [责任链模式](post/design_pattern/8.责任链模式.md)
+* [装饰器模式](post/design_pattern/10.装饰器模式.md)
 
 ## Mybatis
 
