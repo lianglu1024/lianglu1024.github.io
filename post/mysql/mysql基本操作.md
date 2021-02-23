@@ -4,20 +4,18 @@
 
 ```mysql
 CREATE TABLE `nano_order` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `nano_number` varchar(32) NOT NULL DEFAULT '' COMMENT 'nano单号',
-  `tracking_no` varchar(32) NOT NULL DEFAULT '' COMMENT '物流单号',
-  `delivery_way` varchar(20) NOT NULL DEFAULT '' COMMENT '物流方式',
+  `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `nano_number` VARCHAR(32) NOT NULL DEFAULT '' COMMENT 'nano单号',
+  `tracking_no` VARCHAR(32) NOT NULL DEFAULT '' COMMENT '物流单号',
+  `delivery_way` VARCHAR(20) NOT NULL DEFAULT '' COMMENT '物流方式',
   `feature` JSON DEFAULT NULL COMMENT '扩展字段',
-  `parcel_price` decimal(10,2) DEFAULT NULL COMMENT '包裹价格',
-  `order_name` varchar(24) NOT NULL DEFAULT '' COMMENT '订单号',
-  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间 UTC',
-  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间 UTC',
-  `sp_name` varchar(32) NOT NULL DEFAULT '' COMMENT '出库单',
+  `parcel_price` DECIMAL(10,2) DEFAULT NULL COMMENT '包裹价格',
+  `order_name` VARCHAR(24) NOT NULL DEFAULT '' COMMENT '订单号',
+  `create_time` DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间 UTC',
+  `update_time` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间 UTC',
   PRIMARY KEY (`id`),
   KEY `idx_order_name` (`order_name`),
   KEY `idx_nano_order` (`nano_number`),
-  KEY `idx_sp_name` (`sp_name`),
   KEY `idx_update_time` (`update_time`),
   UNIQUE KEY `uidx_tracking_no_delivery_way` (`tracking_no`,`delivery_way`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'nano_order表';
