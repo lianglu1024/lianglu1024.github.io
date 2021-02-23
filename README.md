@@ -13,6 +13,10 @@
 * [责任链模式](post/design_pattern/8.责任链模式.md)
 * [装饰器模式](post/design_pattern/10.装饰器模式.md)
 
+## MySQL
+
+* [MySQL常用基本操作](post/mysql/mysql基本操作.md)
+
 ## Mybatis
 
 * [DataSource](https://blog.csdn.net/ju_362204801/article/details/78886102)
