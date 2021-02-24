@@ -5,6 +5,11 @@
 ## Java
 
 * [UTF-8和Unicode](post/java/UTF-8和Unicode.md)
+* BigDecimal和float和double
+
+## JVM
+
+* [笔记1](post/jvm/1.md)
 
 ## 设计模式
 

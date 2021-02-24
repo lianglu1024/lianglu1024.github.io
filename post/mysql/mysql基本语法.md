@@ -80,58 +80,6 @@ mysql> select * from (select * from test group by class_id) as T group by name;
 先对class_id进行分组，再对结果按照name进行分组
 
 group一般跟聚合函数联合使用，聚合函数主要包括sum，max，min，avg，group-concat
-## 表的增删改
-### 创建表
-```
-CREATE TABLE `nano_order` (
-  `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `nano_number` varchar(32) NOT NULL DEFAULT '' COMMENT 'nano单号',
-  `tracking_no` varchar(32) NOT NULL DEFAULT '' COMMENT '物流单号',
-  `delivery_way` varchar(20) NOT NULL DEFAULT '' COMMENT '物流方式',
-  `order_name` varchar(24) NOT NULL DEFAULT '' COMMENT '订单号',
-  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'ERP端的创建时间 UTC',
-  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'ERP端的更新时间 UTC',
-  `sp_name` varchar(32) NOT NULL DEFAULT '' COMMENT '出库单',
-  PRIMARY KEY (`id`) USING BTREE,
-  KEY `idx_order_name` (`order_name`) USING BTREE,
-  KEY `idx_nano_order` (`nano_number`) USING BTREE,
-  KEY `idx_sp_name` (`sp_name`) USING BTREE,
-  KEY `idx_update_time` (`update_time`) USING BTREE,
-  UNIQUE KEY `uidx_tracking_no_delivery_way` (`tracking_no`,`delivery_way`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'nano_order表';
-```
-
-### 修改表
-```
-update sale_order set shipping_state="Punjab",shipping_city="Jallandhur" where order_name="SO275146782";
-```
-
-### 插入
-```
-INSERT INTO cargo_proxy(cargo_proxy, email_collection, warehouse, report_type_collection)
-VALUES ('盛凡', "sandy@sfanair.com", 'hangzhou2',"summary_from_manifest"), 
-('盛凡', "sandy@sfanair.com", 'dongguan2', "summary_from_manifest")
-```
-
-### 清空表
-```
-truncate table cargo_proxy
-```
-
-### 更改默认值
-```
-alter table carrier_company alter column status set default 1;
-```
-
-### 增加索引
-```
-alter table seller_address_registration DROP INDEX address_id,add unique index idx_addr_id_delivery_way(address_id,delivery_way)
-###
-alter table order_nano_rel add index idx_carrier_order(carrier_order),add index idx_order_name(order_name);
-```
-
-
-
 ## case when
 
 查询
