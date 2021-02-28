@@ -12,6 +12,10 @@
 * [笔记1](post/jvm/1.md)
 * [直接内存](post/jvm/直接内存.md)
 
+## 并发编程
+
+* [并发编程](post/concurent/1.md)
+
 ## 设计模式
 
 * [模板设计模式](post/design_pattern/9.模板设计模式.md)
