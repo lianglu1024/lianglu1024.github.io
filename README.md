@@ -14,7 +14,7 @@
 
 ## 并发编程
 
-* [并发编程](post/concurent/1.md)
+* [并发编程](post/concurrent/1.md)
 
 ## 设计模式
 
