@@ -11,11 +11,12 @@
 
 * [笔记1](post/jvm/1.md)
 * [直接内存](post/jvm/直接内存.md)
-* [共享模型之管程](post/concurrent/共享模型之管程.md)
+* [类加载器](post/jvm/类加载器.md)
 
 ## 并发编程
 
 * [并发编程](post/concurrent/并发编程基础知识.md)
+* [共享模型之管程](post/concurrent/共享模型之管程.md)
 
 ## 设计模式
 
