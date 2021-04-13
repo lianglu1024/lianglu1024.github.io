@@ -5,3 +5,7 @@
 20210412
 * [日志](https://www.yuque.com/anjingdemeinanzi-8k0vg/sbp5dg/fde1pe)
 
+20210413
+* [监听器模式](https://www.yuque.com/anjingdemeinanzi-8k0vg/yovzol/afe916)
+* [状态机模式](https://www.yuque.com/anjingdemeinanzi-8k0vg/yovzol/ezrl68)
+
