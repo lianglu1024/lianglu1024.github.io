@@ -4,7 +4,7 @@
 
 ## JVM
 * [volatile关键字](https://www.yuque.com/anjingdemeinanzi-8k0vg/hmwlz8/adnwmq)
-* [类的加载和双亲委派机制]()
+* [类的加载](https://www.yuque.com/anjingdemeinanzi-8k0vg/hmwlz8/be545i)
 
 ## MyBatis
 * [MyBatis快速入门](https://www.yuque.com/anjingdemeinanzi-8k0vg/wwtnpq/so3p5t)
