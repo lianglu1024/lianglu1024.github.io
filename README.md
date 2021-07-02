@@ -10,7 +10,7 @@
 * [线程池](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/plgmre)
 * [ThreadLocal](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/cg3u92)
 * [AQS]()
-* [volatile关键字](https://www.yuque.com/anjingdemeinanzi-8k0vg/hmwlz8/adnwmq)
+* [volatile关键字](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/vc7gzh)
 * [sychronic关键字]()
 
 ## MyBatis
