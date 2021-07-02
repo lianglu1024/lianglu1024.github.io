@@ -6,8 +6,9 @@
 * [类的加载](https://www.yuque.com/anjingdemeinanzi-8k0vg/hmwlz8/be545i)
 
 ## 并发编程
-* [乐观锁CAS和原子类]()
-* [线程池]()
+* [乐观锁CAS和原子类](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/lo938x)
+* [线程池](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/plgmre)
+* [ThreadLocal](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/cg3u92)
 * [AQS]()
 * [volatile关键字](https://www.yuque.com/anjingdemeinanzi-8k0vg/hmwlz8/adnwmq)
 * [sychronic关键字]()
