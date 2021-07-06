@@ -8,7 +8,7 @@
 
 ## 并发编程
 * [乐观锁CAS和原子类](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/lo938x)
-* [线程池](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/plgmre)
+* [线程池ThreadPoolExecutor](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/plgmre)
 * [ThreadLocal](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/cg3u92)
 * [抽象队列同步器AQS](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/dibuyc)
 * [volatile关键字](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/vc7gzh)
