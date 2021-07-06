@@ -1,6 +1,8 @@
 
 # Java
-* StringBuffer和StringBuilder区别
+* StringBuffer和StringBuilder区别？
+* HashSet底层原理是HashMap，那value是常量的Object对象
+* HashMap和CouncurrentHashMap的区别？
 
 # [JVM](https://www.yuque.com/anjingdemeinanzi-8k0vg/oyy4o2/ride27)
 * JVM内存模型
@@ -19,4 +21,5 @@
 * 简单说说你了解的类加载器，可以打破双亲委派么，怎么打破？
 
 # Concurrent
+* 我们知道ArrayList是线程不安全的，请编写一个不安全的案例并给出解决方案
 
