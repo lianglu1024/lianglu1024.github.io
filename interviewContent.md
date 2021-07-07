@@ -14,7 +14,6 @@
 * JVM垃圾回收的时候如何确定垃圾？是否知道什么是GC Roots
 * 垃圾回收算法
 * 常量池和字符串常量池
-* volatile关键字
 * volatile的原理和实现机制
 * happens-before
 * 说说你知道的几种主要的JVM参数
