@@ -3,6 +3,8 @@
 * StringBuffer和StringBuilder区别？
 * HashSet底层原理是HashMap，那value是常量的Object对象
 * HashMap和CouncurrentHashMap的区别？
+* ArrayList和LinkArrayList的区别？
+* 介绍一下NIO
 
 # [JVM](https://www.yuque.com/anjingdemeinanzi-8k0vg/oyy4o2/ride27)
 * JVM内存模型
