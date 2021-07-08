@@ -31,4 +31,5 @@
 * synchronized和ReentrantLock区别
 * 线程池用过吗？如何设置合理的参数？
 * 死锁
+* AQS是什么？
 
