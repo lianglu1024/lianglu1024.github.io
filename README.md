@@ -2,6 +2,9 @@
 
 二八定律：一个人的时间和精力都是非常有限的，要想真正“做好每一件事情”几乎是不可能的，要学会合理地分配时间和精力。要想面面俱到还不如重点突破。把80%的资源花在能出关键效益的20%的方面，这20%的方面又能带动其余80%的发展。
 
+## Java
+* [常量池和字符串常量池](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/ygghev)
+
 ## JVM
 * [类的加载](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/yyaahx)
 * [强软弱虚四种引用](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/dibuyc)
