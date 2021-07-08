@@ -17,6 +17,7 @@
 * [抽象队列同步器AQS](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/dibuyc)
 * [volatile关键字](https://www.yuque.com/anjingdemeinanzi-8k0vg/gz3884/vc7gzh)
 * [sychronic关键字]()
+* [sychronic/wait/notify&Condition/await/signal]()
 
 ## MyBatis
 * [MyBatis快速入门](https://www.yuque.com/anjingdemeinanzi-8k0vg/wwtnpq/so3p5t)
