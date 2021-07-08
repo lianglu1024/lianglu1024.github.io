@@ -22,5 +22,13 @@
 * 简单说说你了解的类加载器，可以打破双亲委派么，怎么打破？
 
 # [Concurrent](https://www.yuque.com/anjingdemeinanzi-8k0vg/oyy4o2/vdzflu)
+* 创建线程有几种方式
 * 我们知道ArrayList是线程不安全的，请编写一个不安全的案例并给出解决方案
+* 公平锁、非公平锁、可重入锁(递归锁)、自旋锁、共享锁、独占锁谈谈你的理解？请手写一个自旋锁
+* CountDownLatch、CyclicBarrier、Semaphore是什么？
+* 阻塞队列
+* 生产者和消费者示例？
+* synchronized和ReentrantLock区别
+* 线程池用过吗？如何设置合理的参数？
+* 死锁
 
