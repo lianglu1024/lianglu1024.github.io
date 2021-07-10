@@ -25,3 +25,6 @@
 * [MyBatis执行流程](https://www.yuque.com/anjingdemeinanzi-8k0vg/wwtnpq/hdgt1l)
 * [Spring整合MyBatis原理](https://www.yuque.com/anjingdemeinanzi-8k0vg/wwtnpq/nqb9qd)
 * [分库分表](https://www.yuque.com/anjingdemeinanzi-8k0vg/wwtnpq/gggcbp)
+
+## Dubbo
+* [dubbo的SPI机制]()
